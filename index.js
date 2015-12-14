@@ -5,7 +5,7 @@ var $ = require('cheerio'),
 	url = require('url');
 
 var datastore = {
-	domain: url.parse('https://getcarina.com'),
+	domain: url.parse(process.argv[2]),
 	map: new Graph()
 };
 
